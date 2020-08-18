@@ -1,5 +1,6 @@
 package com.thirumal.lamda;
 
+import java.util.function.Function;
 import java.util.stream.IntStream;
 
 public class Intermediate {

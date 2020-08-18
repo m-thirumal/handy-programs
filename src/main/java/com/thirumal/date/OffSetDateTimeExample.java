@@ -3,6 +3,7 @@ package com.thirumal.date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.util.Date;
 import java.util.TimeZone;
@@ -22,6 +23,10 @@ public class OffSetDateTimeExample {
 		
 		
 		System.out.println(objectNullableEqual(now, new Date()));
+		
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'+'SS:SZ");
+        Instant date1 = Instant.parse("2020-07-26T18:52:24+05:30");
+        System.out.println("DATE="+date1);
 	}
 	
 	static boolean objectNullableEqual(Object o1, Object o2) {
