@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -27,10 +28,17 @@ public class OffSetDateTimeExample {
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'+'SS:SZ");
         Instant date1 = Instant.parse("2020-07-26T18:52:24+05:30");
         System.out.println("DATE="+date1);
+        findDifference();
 	}
 	
 	static boolean objectNullableEqual(Object o1, Object o2) {
 		return (o1 == null ? o2 == null : o1.equals(o2));
+	}
+	
+	static void findDifference() {
+		System.out.println("----Find Difference ----");
+		OffsetDateTime off = OffsetDateTime.parse("2021-02-11T11:05:30+05:00");
+		System.out.println(off.until(OffsetDateTime.now(), ChronoUnit.SECONDS));
 	}
 
 }

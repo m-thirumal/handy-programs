@@ -1,5 +1,6 @@
 package com.thirumal.java8;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -8,6 +9,7 @@ import java.util.stream.Collectors;
 public class Groupby {
 
 	public static void main(String[] args) {
+		System.out.println(LocalDateTime.now());
 		List<String> intList = List.of("T", "sdfd", "dsdsf", "sdfdsfd", "dsaas");
 		 
 	    List<List<String>> subSets = MyPartition.partition(intList, 3);

@@ -3,6 +3,8 @@
  */
 package com.thirumal.collection;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,6 +35,13 @@ public class MapOfLimit {
 		mapEntries.forEach((k, v)->{
 			System.out.println("K: " + k + " & V: " + v);
 		});
+		//
+		List<String> l = List.of("A", "B");
+		List<String> l1 = List.of("C", "D");
+		List<String> ll = new ArrayList<>();
+		ll.addAll(l);
+		ll.addAll(l1);
+		System.out.println(ll);
 	}
 
 }
