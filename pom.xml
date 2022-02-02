@@ -45,7 +45,7 @@
 	<dependency>
 		<groupId>org.postgresql</groupId>
 		<artifactId>postgresql</artifactId>
-		<version>42.1.1</version>
+		<version>42.2.25</version>
 	</dependency>
 	<!-- AsciiDoc documents can be converted into many other formats like HTML, PDF, man pages, EPUB, and others. -->
 	<dependency>
